@@ -7,8 +7,9 @@ type BoardProps = {
 
 const Board: React.FC<BoardProps> = () => {
   const status: string = 'Next player: X';
+
   const renderSquare = (i: number) => {
-    return <Square num={i}/>;
+    return <Square value={i}/>;
   };
 
   return (

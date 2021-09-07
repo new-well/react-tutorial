@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 type SquareProps = {
-  num: number,
+  value: number,
 };
 
-const Square: React.FC<SquareProps> = ({ num }) => {
+const Square: React.FC<SquareProps> = ({ value }) => {
+  const [mark, setMark] = useState("");
+
   return (
-    <button className="square">
-      {/* TODO */}
+    <button className="square" onClick={() => setMark("X")}>
+      {mark}
     </button>
   );
 };
