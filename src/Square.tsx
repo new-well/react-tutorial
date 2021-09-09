@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 type SquareProps = {
-  mark: string;
+  value: string;
   handleClick: () => void;
 };
 
-const Square: React.VFC<SquareProps> = ({ mark, handleClick }) => {
+const Square: React.VFC<SquareProps> = ({ value, handleClick }) => {
   return (
-    <button className="square" onClick={handleClick}>
-      {mark}
+    <button className='square' onClick={handleClick}>
+      {value}
     </button>
   );
 };

@@ -1,5 +1,5 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font: 14px 'Century Gothic', Futura, sans-serif;
   margin: 20px;
 }
 
@@ -9,7 +9,7 @@ ol, ul {
 
 .board-row:after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
