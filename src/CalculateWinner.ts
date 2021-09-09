@@ -11,7 +11,7 @@ const calculateWinner = (squares: string[]): string => {
   ];
   for (let i = 0; i < checkLines.length; i++) {
     const [a, b, c] = checkLines[i];
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+    if (squares[a] !== '' && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
   }
