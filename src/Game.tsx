@@ -26,7 +26,7 @@ const Game: React.VFC<GameProps> = () => {
     }
     currentSquares[num] = xIsNext ? 'X' : 'O';
     setHistory(_history.concat([currentSquares]));
-    setCurrentStep(history.length);
+    setCurrentStep(currentStep+1);
     setXIsNext(!xIsNext);
   };
 
